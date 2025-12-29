@@ -38,3 +38,4 @@ En cliquant sur son image, il est possible de voir les différents tags de son i
 
 Enfin, en cliquant sur le sha de l'image il est possible de voir le détail de l'image y compris la liste des vulnérabilité remontées par Trivy.
 
+A noter qu'un dashboard dédié à Trivy sur Grafana est également présent dans les dashboards par défaut (au MI) 
