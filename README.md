@@ -8,11 +8,13 @@ Lors du build précédent, l'image docker créée se nomme java-demo et a été 
 
 Harbor est le gestionnaire d'artefact de CPiN. A ce titre il stocke l'ensemble des images contruites via Gitlab-CI. Il est également possible de faire récupérer des images externes à travers Harbor, c'est notamment le cas lors d'utilisation d'images fournies par un éditeur dont le projet ou le ministère ne possède pas le code source.
 
-Depuis la console CPiN, en cliquant sur le bouton ```Afficher les secrets des services``` il est possible de voir le nom et l'URL de son projet sur Harbor : 
+Il est possible de récupérer les références Harbor des images constuites de plusieurs façon :  
+
+ - Depuis la console CPiN, en cliquant sur le bouton ```Afficher les secrets des services``` il est possible de voir l'URL de son projet sur Harbor : 
 
 ![secret des services](./img/secret-des-services.png)
 
-Lors de l'étape de constuction du projet, il est également possible de voir l'upload de son image lors de la fin de l'étape de build : 
+ - Depuis Gitlab, lors de l'étape de constuction du projet, il est possible de voir l'upload de son image dans les logs de la pipeline Gitlab-CI : 
 
 Pour cela, aller sur Gitlab puis sur le projet Java puis dans build -> piplines, passer la souris sur le dernier stage 'docker-build' et cliquer sur la coche verte
 
@@ -24,7 +26,7 @@ La fin des logs indiquent l'étape d'upload de l'image sur Habror :
 
 ![build upload Harbor](./img/logs-build-to-harbor.png)
 
-Enfin, depuis la console, dans l'onglet ```Services externes``` cliquez sur la tuile Harbor pour accéder directement à son espace projet sur Habror :
+ - Depuis Habror, pour cela, depuis la console, dans l'onglet ```Services externes``` cliquez sur la tuile Harbor pour accéder directement à son espace projet sur Habror :
 
 ![services externes](./img/services-externes.png)
 
