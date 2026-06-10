@@ -67,3 +67,5 @@ remontées par Trivy.
 > À noter qu'un dashboard dédié à Trivy sur Grafana est également présent dans les dashboards par défaut (au MI).
 
 Bravo, vous avez terminé la partie 3 de la formation CPiN sur Harbor et Trivy.
+
+Vous pouvez passer à l'étape 4 : [Chart Helm de démonstration sur CPiN](https://github.com/cloud-pi-native/formation-cpin-deploiement)
